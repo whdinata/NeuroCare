@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="universityofedinburgh.neurocare.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <universityofedinburgh.neurocare.view.NCMenuItem
+            android:id="@+id/menu_patients"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:src="@drawable/ic_patient"
+            android:text="@string/patients"
+            android:background="@color/primary"/>
+
+        <universityofedinburgh.neurocare.view.NCMenuItem
+            android:id="@+id/menu_actions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:gravity="center"
+            android:src="@drawable/ic_action"
+            android:text="@string/actions"
+            android:background="@color/primary"/>
+
+        <universityofedinburgh.neurocare.view.NCMenuItem
+            android:id="@+id/menu_notifications"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:src="@drawable/ic_notification"
+            android:text="@string/notifications"
+            android:background="@color/primary"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu"
+        android:id="@+id/content" />
+</RelativeLayout>

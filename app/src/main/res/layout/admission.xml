@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swallow"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_swallow"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feeding"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_feeding"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grooming"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_grooming"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bathing"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_bathing"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dress"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_dress"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toiletting"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_toiletting"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_transfer"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bowel"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_bowel"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walk"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_walk"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stairs"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_stairs"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprehension"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_comprehension"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expression"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_expression"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_reading"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writing"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_writing"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social Interaction"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_social_interaction"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Problem Solve"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_problem_solve"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memory"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_memory"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attention"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_attention"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speech"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_speech"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emotion"
+                android:textColor="@color/patient_id_text"
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_emotion"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</merge>

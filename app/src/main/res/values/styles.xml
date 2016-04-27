@@ -8,6 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

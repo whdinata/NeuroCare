@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#15474b</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="primary">#292929</color>
+    <color name="patient_id_text">#489ea5</color>
+    <color name="date_mdt">#256d74</color>
+    <color name="date_family">#245373</color>
 </resources>

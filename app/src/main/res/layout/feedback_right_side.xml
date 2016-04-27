@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/date_mdt"/>
+
+    <ImageButton
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_notes"/>
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/date_mdt"/>
+
+    <TextView
+        android:id="@+id/shortDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+</merge>
