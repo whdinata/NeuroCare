@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#15474b</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#449EA6</color>
 
     <color name="primary">#292929</color>
     <color name="patient_id_text">#489ea5</color>

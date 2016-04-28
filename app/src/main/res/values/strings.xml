@@ -16,6 +16,14 @@
     <string name="title_activity_patient_detail">Patient Detail</string>
     <string name="title_activity_feedback_form">Feedback Form</string>
 
+    <string name="motor">Motor</string>
+    <string name="cognitive">Cognitive</string>
+
+    <string name="save">Save</string>
+
+    <string name="datetime">Date and Time</string>
+    <string name="description">Description</string>
+
     <string name="meeting_request">Request a meeting</string>
 
     <string name="ongoing_issues">Ongoing Issues/Challenges</string>
