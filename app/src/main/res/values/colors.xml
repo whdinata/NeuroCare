@@ -8,4 +8,9 @@
     <color name="patient_id_text">#489ea5</color>
     <color name="date_mdt">#256d74</color>
     <color name="date_family">#245373</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="button_lime_green">#BABD51</color>
+    <color name="dark_blue_notes">#215274</color>
 </resources>

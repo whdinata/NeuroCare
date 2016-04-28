@@ -65,8 +65,10 @@
             android:label="@string/title_activity_feedback_form"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-
         </activity>
+        <activity android:name=".FamilyActivity"
+            android:label="Family Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AddFamilyNoteActivity"
             android:label="@string/title_activity_add_family_note"

@@ -10,8 +10,13 @@
     <string name="schedules">Schedules</string>
     <string name="actions">Actions</string>
     <string name="notifications">Notifications</string>
+    <string name="current_condition">Current Condition</string>
+    <string name="family_notes">Family Notes</string>
+    <string name="notes">Notes</string>
     <string name="title_activity_patient_detail">Patient Detail</string>
     <string name="title_activity_feedback_form">Feedback Form</string>
+
+    <string name="meeting_request">Request a meeting</string>
 
     <string name="ongoing_issues">Ongoing Issues/Challenges</string>
     <string name="fam_admission">FAM Admission</string>
