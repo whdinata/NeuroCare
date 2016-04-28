@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import universityofedinburgh.neurocare.FamilyNoteActivity;
 import universityofedinburgh.neurocare.FeedbackFormActivity;
 import universityofedinburgh.neurocare.R;
 import universityofedinburgh.neurocare.entity.FamilyNote;
@@ -57,8 +58,8 @@ public class FamilyNoteListAdapter extends RecyclerView.Adapter<FamilyNoteListAd
         holder.container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = FeedbackFormActivity.getIntent(v.getContext(), note);
-//                v.getContext().startActivity(intent);
+                Intent intent = FamilyNoteActivity.getIntent(v.getContext(), note);
+                v.getContext().startActivity(intent);
             }
         });
 

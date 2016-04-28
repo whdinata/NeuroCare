@@ -51,12 +51,10 @@ public class FamilyNoteListFragment extends Fragment{
             RecyclerView recyclerView = (RecyclerView) view;
 
             List<FamilyNote> familyNotes = new ArrayList<>();
-            familyNotes.add(new FamilyNote("1", "Hi, John. Mary needs a companion to go to Botanic garden. Could you come?",
-                    "Wed 27 APR 2016", "1", "2"));
+            familyNotes.add(new FamilyNote("1", "Hi, John. Mary needs a companion to go to Botanic garden. Would you like to accompany her?",
+                    "Wed 27 APR 2016", "1", "Ryan (OT)"));
             familyNotes.add(new FamilyNote("2", "Good morning! Our nurse staff will come to your place for general check up.",
-                    "Mon 01 MAY 2016", "1", "3"));
-            familyNotes.add(new FamilyNote("3", "Please make sure that Mary takes the medication!",
-                    "Wed 03 MAY 2016", "1", "2"));
+                    "Mon 01 MAY 2016", "1", "Rosie (Nurse)"));
             adapter = new FamilyNoteListAdapter();
             adapter.setData(familyNotes);
             recyclerView.setAdapter(adapter);

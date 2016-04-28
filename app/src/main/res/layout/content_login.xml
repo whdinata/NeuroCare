@@ -19,6 +19,11 @@
         android:layout_margin="30dp"
         android:gravity="center"
         android:orientation="vertical">
+        
+        <ImageView
+            android:src="@drawable/logo_mdt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -27,6 +32,7 @@
 
             <EditText
                 android:id="@+id/username"
+                android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionNext"
@@ -42,6 +48,7 @@
 
             <EditText
                 android:id="@+id/password"
+                android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"

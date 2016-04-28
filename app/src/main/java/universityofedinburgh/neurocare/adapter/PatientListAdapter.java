@@ -54,7 +54,7 @@ public class PatientListAdapter extends RecyclerView.Adapter<PatientListAdapter.
         holder.container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = PatientDetailActivity.getIntent(v.getContext(), patient);
+                Intent intent = FamilyActivity.getIntent(v.getContext(), patient);
                 v.getContext().startActivity(intent);
                 //v.getContext().startActivity(new Intent(v.getContext(), FeedbackFormActivity.class));
             }

@@ -11,7 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import universityofedinburgh.neurocare.entity.Patient;
 import universityofedinburgh.neurocare.fragment.CurrentConditionFragment;
@@ -23,6 +25,10 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
     private static final String PATIENT = "patient";
     private TextView tvCurrentCondition;
     private TextView tvNotes;
+    private Button requestMeetingButton;
+    private View menuPatients;
+    private View menuNotifications;
+    private Patient patient;
 
     private final Fragment[] fragment = {
             CurrentConditionFragment.newInstance(),
@@ -42,7 +48,7 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_family);
 
         Intent intent = getIntent();
-        Patient patient = (Patient)intent.getSerializableExtra(PATIENT);
+        patient = (Patient)intent.getSerializableExtra(PATIENT);
 
         setTitle(patient.getName());
 
@@ -50,6 +56,14 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void initView(Patient patient){
+        menuPatients = findViewById(R.id.menu_patients);
+        menuNotifications = findViewById(R.id.menu_notifications);
+
+        requestMeetingButton = (Button) findViewById(R.id.request_meeting);
+
+//        menuPatients.setOnClickListener(this);
+//        menuNotifications.setOnClickListener(this);
+
         tvCurrentCondition = (TextView) findViewById(R.id.current_condition);
         tvNotes = (TextView) findViewById(R.id.notes);
 
@@ -77,28 +91,44 @@ public class FamilyActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         switch(v.getId()){
+//            case R.id.menu_patients:
+//                changeBackgroundColor(R.id.menu_patients);
+//                break;
+//            case R.id.menu_notifications:
+//                changeBackgroundColor(R.id.menu_notifications);
+//                break;
             case R.id.current_condition:
                 FragmentUtils.changeFragment(this, R.id.content, fragment[0]);
                 changeBackgroundColor(R.id.current_condition);
                 break;
-            default:
+            case R.id.notes:
                 FragmentUtils.changeFragment(this, R.id.content, fragment[1]);
                 changeBackgroundColor(R.id.notes);
+                break;
+            case R.id.request_meeting:
+                Intent intent = MeetingRequestActivity.getIntent(v.getContext(), patient);
+                v.getContext().startActivity(intent);
                 break;
         }
     }
 
     public void changeBackgroundColor(int id){
-        int primary = ContextCompat.getColor(this, R.color.patient_id_text);
-        int white = ContextCompat.getColor(this, android.R.color.white);
+        final int primary = ContextCompat.getColor(this, R.color.patient_id_text);
+        final int white = ContextCompat.getColor(this, android.R.color.white);
+        final int topMenuColor = ContextCompat.getColor(this, R.color.primary);
 
-        if(id == R.id.current_condition){
+//        menuPatients.setBackgroundColor(topMenuColor);
+//        menuNotifications.setBackgroundColor(topMenuColor);
+//
+//        findViewById(id).setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
+
+        if (id == R.id.current_condition) {
             tvNotes.setTextColor(white);
             tvNotes.setBackgroundColor(primary);
 
             tvCurrentCondition.setTextColor(primary);
             tvCurrentCondition.setBackgroundColor(white);
-        } else{
+        } else {
             tvCurrentCondition.setTextColor(white);
             tvCurrentCondition.setBackgroundColor(primary);
 
